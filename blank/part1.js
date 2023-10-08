@@ -1,0 +1,1 @@
+console.log("clearing the fundamental and going indepth")
