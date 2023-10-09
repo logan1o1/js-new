@@ -66,3 +66,6 @@ let myObj1 = {
 console.log(typeof myObj1);
 
 // non primitive data types return object or function as data types
+
+// Stack(primitive) when we change an existing variable it gives us a copy of the original i,e the original's value is not changed, 
+// Heap(non-primitive) when we change an existing variable it gives us a reference of the original i,e original's value changes
