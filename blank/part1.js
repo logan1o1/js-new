@@ -98,6 +98,8 @@
 
 // console.log(Math.floor(Math.random()*10)+1);
 
+
+//for a dice it will only show betwn 1 n 6
 let max = 6;
 let min = 1;
 
