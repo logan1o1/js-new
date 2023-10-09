@@ -103,4 +103,24 @@
 let max = 6;
 let min = 1;
 
-console.log(Math.floor(Math.random()*(max-min+1)));
+// console.log(Math.floor(Math.random()*(max-min+1)));
+
+
+// Date
+
+// let date = new Date();
+// console.log(date.toDateString());
+// console.log(date.toString());
+// console.log(date.toISOString());
+// console.log(date.toJSON());
+// console.log(date.toLocaleDateString());
+// console.log(date.toLocaleString());
+
+// let myDate = new Date(2003,5,27);
+let myDate = new Date("2003-06-27");
+// console.log(myDate.toDateString());
+
+let myTimeStamp = Date.now()
+// console.log(myTimeStamp);
+
+console.log(Math.floor(((Date.now()/1000)/3600)/8760)); // not necessary but its for the no of years
