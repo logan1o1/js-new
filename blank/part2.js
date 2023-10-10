@@ -37,8 +37,80 @@ const normalArr = wierdArr.flat(Infinity)
 
 // console.log(normalArr);
 
-console.log(Array.isArray("lucifer"));
-console.log(Array.from("lucifer")); // of too
+// console.log(Array.isArray("lucifer"));
+// console.log(Array.from("lucifer")); // of too
 
 
 //************************** Objects ***************************
+
+// Object.create()  => singleton; made in the form of a constructor
+
+// object literals
+
+const mySym = Symbol("key1")
+
+const myObj = {
+    name: "david",
+    "full name": "David GOGGINS",
+    [mySym]: "myKey1",
+    age: 500,
+    city: "Agra",
+    email: "lucifer.m@google.com"
+}
+
+// console.log(myObj[mySym]);
+
+// Object.freeze(myObj)
+
+// myObj.myFun = function fun() {
+//     console.log("don't do saste nashe");
+// }
+// console.log(myObj.myFun());
+
+// myObj.greeting = function greet() {
+//     console.log(`hello ${this["full name"]}, =>stay hard motherfucker`);
+// }
+// console.log(myObj.greeting());
+
+const tinderUser = new Object();
+
+tinderUser.id = "1bc23"
+tinderUser.name = "Pietro"
+tinderUser.isLoggedin = true
+
+// console.log(Object.keys(tinderUser)); 
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// hasOwnProperty
+
+// console.log(tinderUser);
+
+const obj1 = {1:"a", 2:"b"}
+const obj2 = {3:"c", 4:"d"}
+const obj3 = {5:"e", 6:"f"}
+
+// const obj4 = Object.assign({},obj1,obj2,obj3)
+const obj4 = {...obj1,...obj2,...obj3}
+
+// console.log(obj4);
+
+//destructuring
+
+const course = {
+    courseName: "js",
+    coursePrice: 2000,
+    courseInstructor: "hitesh choudhry"
+}
+
+const {courseInstructor: instructor} = course // extract courseInstuctor from course
+
+console.log(instructor);
+
+// {
+//     Object body         JSON format
+// }
+
+// [
+//     {},
+//     {}                JSON Array format
+// ]
