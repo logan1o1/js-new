@@ -22,8 +22,23 @@
 </body>
 <script>
     const parent = document.querySelector('.parent')
-    console.log(parent);
-    console.log(parent.children);
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerText);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        const element = parent.children[i].style.color = "orange";
+        // console.log(element);
+    }
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log(parent.childNodes);
 </script>
 
 </html>
