@@ -114,3 +114,6 @@ console.log(instructor);
 //     {},
 //     {}                JSON Array format
 // ]
+
+
+// Object.keys(myObj)  => this returns the object in form of an array
