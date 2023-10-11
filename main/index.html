@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(36, 34, 43);
+            color: white;
+        }
+    </style>
+    <script>
+        // document.getElementById('title')
+        // document.querySelector('.container')        // querrySelector always selects the 1st element by that attribute
+        // document.querySelector('#div1')
+
+        // const myU = document.querySelector('ul')
+        // const myl = myU.querySelectorAll('li')
+        // myl.forEach((l) => {
+        //     l.style.color = 'cyan'
+        // })
+
+        // in case we do getElementByClassName we will get a HTML collection in that case we first convert it into an array using 
+        // Array.from(var)
+
+
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Leaning DOM </h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, est autem. Hic porro soluta aliquam amet ab? Quis, reiciendis eaque.</p>
+    <div id="div1" class="container">
+        <h1 id="title" class="heading">Leaning DOM </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, est autem. Hic porro soluta aliquam
+            amet ab? Quis, reiciendis eaque.</p>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     </div>
 </body>
+
 </html>
