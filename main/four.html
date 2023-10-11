@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="darkTheme.css">
+</head>
+<body>
+    <ul class="language">
+        <li>javaScript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName) {
+        const li = document.createElement('li')
+        li.innerText = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang("Ruby")
+
+    function addLangOpti(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLangOpti("typescript")
+    addLangOpti("python")
+
+
+    // Edit 
+    const editThird = document.querySelector('li:nth-child(3)')
+    editThird.innerText = "cpp"
+
+
+    // Remove
+    const removeSecond = document.querySelector('li:nth-child(2)')
+    removeSecond.remove()
+</script>
+</html>
