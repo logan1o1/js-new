@@ -45,3 +45,5 @@ let val1 = null ?? 20 ?? 30
 //Terneary operator  ?        ******
 // condition ? true: false
 
+const age = 40
+ age >= 18 ? console.log("u can vote") : console.log("u cant vote");
