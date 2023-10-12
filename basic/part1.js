@@ -124,3 +124,4 @@ let myTimeStamp = Date.now()
 // console.log(myTimeStamp);
 
 console.log(Math.floor(((Date.now()/1000)/3600)/8760)); // not necessary but its for the no of years
+
