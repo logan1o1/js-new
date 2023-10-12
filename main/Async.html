@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fuck u</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const changeH1 = document.querySelector('h1')
+//setTimeout
+    // const txtChange = setTimeout(() => {
+    //     changeH1.innerText = "My life is fucked"
+    // }, 3000)
+
+    const startBtn = document.querySelector('#start')
+    const stopBtn = document.querySelector('#stop')
+//clearTimeout
+    // btn.addEventListener('click',function (e) {
+    //     clearTimeout(txtChange)
+    // })
+    let date = new Date().toLocaleTimeString();
+
+    const interval = setInterval(function(){
+        console.log(date);
+    },2000)
+
+    startBtn.addEventListener('click', function (e) {
+        interval;
+    })
+
+    stopBtn.addEventListener('click', function (e) {
+        clearInterval(interval);
+    })
+</script>
+</html>
