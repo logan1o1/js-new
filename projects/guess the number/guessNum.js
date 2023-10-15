@@ -27,9 +27,9 @@ function validate(guess) {
     if (isNaN(guess)) {
         alert('plz enter a valid no.');
     }else if (guess < 1) {
-        alert('plz enter a no. from 1-100');
+        alert('plz enter a no. from 1-10');
     }else if (guess > 100) {
-        alert('plz enter a no. from 1-100');
+        alert('plz enter a no. from 1-10');
     }else{
         prevGuess.push(guess);
         if (numGuess === 10) {
